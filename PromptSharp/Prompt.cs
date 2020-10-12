@@ -1,17 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using PromptSharp.Forms;
+using PromptSharp.Internal;
+using PromptSharp.Validations;
 
-using Sharprompt.Forms;
-using Sharprompt.Internal;
-using Sharprompt.Validations;
-
-namespace Sharprompt
+namespace PromptSharp
 {
   public static class Prompt
   {
+    /// <summary>
+    /// Muestra un menu de opciones a las cuales se les incorpora un indice numerico para identificarlas
+    /// Retorna el indice elegido por el usuario
+    /// </summary>
+    /// <remarks>
+    /// No deberia filtrar el menu...porque si tengo armada una estructura con opciones verticales haria un chiquero...
+    /// Igual no permite opciones a la derecha (solo cambio de pagina)
+    /// </remarks>
+    /// <param name="header"></param>
+    /// <param name="items"></param>
+    /// <returns></returns>
     public static int Menu(string header, IEnumerable<string> items)
     {
-      List<(int, string)> itemsReales = new List<(int, string)>();
+      List<(int indice, string texto)> itemsReales = new List<(int, string)>();
       int idx = 0;
 
       foreach (string item in items)
@@ -19,10 +29,10 @@ namespace Sharprompt
         itemsReales.Add((idx++, item));
       }
 
-      var form = Select<(int, string)>(header, itemsReales, null, null,
-        tuple => $"[{tuple.Item1:00}] .... {tuple.Item2}");
+      var form = Select(header, itemsReales, null, null,
+        tuple => $"[{tuple.indice:00}] .... {tuple.texto}");
 
-      return 0;
+      return form.indice;
     }
 
     public static T Input<T>(string message, object defaultValue = null,
@@ -69,6 +79,7 @@ namespace Sharprompt
 
     /// <summary>
     /// Retorna el elemento que se selecciona entre una enumeracion de los mismos
+    /// Seria interesante mostrar que hay mas paginas de items...
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <param name="message"></param>

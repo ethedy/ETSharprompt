@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Text;
+using PromptSharp.Internal;
 
-using Sharprompt.Internal;
-
-namespace Sharprompt.Drivers
+namespace PromptSharp.Drivers
 {
   internal class DefaultConsoleDriver : IConsoleDriver
   {

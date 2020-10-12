@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Sharprompt.Internal
+namespace PromptSharp.Internal
 {
   /// <summary>
   /// Esta clase permite virtualizar opciones de seleccion de elementos de tipo T

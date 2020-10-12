@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using PromptSharp.Validations;
 
-using Sharprompt.Validations;
-
-namespace Sharprompt.Forms
+namespace PromptSharp.Forms
 {
     internal class Password : FormBase<string>
     {

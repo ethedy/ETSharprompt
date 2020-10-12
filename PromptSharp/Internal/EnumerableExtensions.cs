@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Sharprompt.Internal
+namespace PromptSharp.Internal
 {
     internal static class EnumerableExtensions
     {

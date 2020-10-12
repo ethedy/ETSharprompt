@@ -1,10 +1,10 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
+using Figgle;
+using PromptSharp.Validations;
 
-using Sharprompt.Validations;
-
-namespace Sharprompt.Example
+namespace PromptSharp.Examples
 {
   class Program
   {
@@ -12,7 +12,12 @@ namespace Sharprompt.Example
     {
       Console.OutputEncoding = Encoding.UTF8;
 
+      Header("Test ET Prompt#", "Menu de prueba para Prompt#");
+      Footer("Basada en el trabajo de shibayan");
+
       RunMenuSample();
+
+      Console.ReadLine();
 
 /*
       RunInputSample();
@@ -36,6 +41,8 @@ namespace Sharprompt.Example
         "Importar libros",
         "Importar autores"
       });
+
+      Console.WriteLine($"Se selecciono la opcion: {resultado}");
     }
 
     private static void RunInputSample()
@@ -85,6 +92,28 @@ namespace Sharprompt.Example
       [Display(Name = "Bar value")] Bar,
 
       [Display(Name = "Baz value")] Baz
+    }
+
+    private static void Header(string header, string subtitulo = null)
+    {
+      Console.ForegroundColor = ConsoleColor.Red;
+      Console.WriteLine(FiggleFonts.Standard.Render(header));
+      //Console.WriteLine(FiggleFonts.Roman.Render("Actualiza"));
+      if (subtitulo != null)
+      {
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine(subtitulo);
+      }
+      Console.ForegroundColor = ConsoleColor.White;
+      Console.WriteLine();
+    }
+
+    private static void Footer(string footer)
+    {
+      Console.ForegroundColor = ConsoleColor.DarkGreen;
+      Console.WriteLine(footer);
+      Console.ForegroundColor = ConsoleColor.White;
+      Console.WriteLine();
     }
   }
 }

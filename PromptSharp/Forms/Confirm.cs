@@ -1,6 +1,6 @@
-﻿using Sharprompt.Validations;
+﻿using PromptSharp.Validations;
 
-namespace Sharprompt.Forms
+namespace PromptSharp.Forms
 {
     internal class Confirm : FormBase<bool>
     {

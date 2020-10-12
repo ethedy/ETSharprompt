@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace Sharprompt.Internal
+namespace PromptSharp.Internal
 {
     public class Symbol
     {

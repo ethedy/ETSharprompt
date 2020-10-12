@@ -1,9 +1,10 @@
-# ETSharprompt
+# Prompt#
 
 ![Build](https://github.com/shibayan/Sharprompt/workflows/Build/badge.svg)
 [![License](https://img.shields.io/github/license/shibayan/Sharprompt.svg)](https://github.com/shibayan/Sharprompt/blob/master/LICENSE)
 
-Interactive command line interface toolkit for .NET Core
+Herramientas de linea de comando interactiva para .NET Core 
+
 forkeado desde https://github.com/shibayan/Sharprompt
 
 ![sharprompt](https://user-images.githubusercontent.com/1356444/62227794-87506e00-b3f7-11e9-84ae-06c9a900448b.gif)

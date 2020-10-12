@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sharprompt.Drivers
+namespace PromptSharp.Drivers
 {
   internal interface IConsoleDriver : IDisposable
   {

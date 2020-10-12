@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using PromptSharp.Internal;
+using PromptSharp.Validations;
 
-using Sharprompt.Internal;
-using Sharprompt.Validations;
-
-namespace Sharprompt.Forms
+namespace PromptSharp.Forms
 {
   internal class Select<T> : FormBase<T>
   {

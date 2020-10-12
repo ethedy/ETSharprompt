@@ -1,4 +1,4 @@
-﻿namespace Sharprompt.Validations
+﻿namespace PromptSharp.Validations
 {
   public class ValidationResult
   {

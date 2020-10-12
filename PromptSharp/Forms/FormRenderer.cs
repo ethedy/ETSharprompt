@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using PromptSharp.Drivers;
+using PromptSharp.Internal;
+using PromptSharp.Validations;
 
-using Sharprompt.Drivers;
-using Sharprompt.Internal;
-using Sharprompt.Validations;
-
-namespace Sharprompt.Forms
+namespace PromptSharp.Forms
 {
   internal class FormRenderer : IDisposable
   {

@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using PromptSharp.Validations;
 
-using Sharprompt.Validations;
-
-namespace Sharprompt.Forms
+namespace PromptSharp.Forms
 {
     internal class Input<T> : FormBase<T>
     {

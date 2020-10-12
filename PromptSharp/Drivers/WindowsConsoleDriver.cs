@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace Sharprompt.Drivers
+namespace PromptSharp.Drivers
 {
     internal class WindowsConsoleDriver : DefaultConsoleDriver
     {

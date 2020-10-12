@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 
-namespace Sharprompt.Validations
+namespace PromptSharp.Validations
 {
   public static class Validators
   {

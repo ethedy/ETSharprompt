@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using System.Linq;
 
-namespace Sharprompt.Internal
+namespace PromptSharp.Internal
 {
     internal static class EastAsianWidth
     {
