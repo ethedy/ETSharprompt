@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Sharprompt\Sharprompt.csproj" />
+    <ProjectReference Include="..\Sharprompt\ETSharprompt.csproj" />
   </ItemGroup>
 
 </Project>
